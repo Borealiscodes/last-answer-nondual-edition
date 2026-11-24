@@ -52,8 +52,8 @@ async function triggerCurrentNodeAudio() {
   const res = await piper.speakCue(snap.cue, synth.ctx);
   if (res && res.mode === 'piper-wav') {
     audioStatusEl.textContent = 'PIPER WAV: ' + snap.cue.hash + '.wav';
-  } else if (res && res.mode === 'fallback-synth') {
-    audioStatusEl.textContent = 'SYNTH VOICE (PUSH TO CI FOR WAV)';
+  } else if (res && res.mode === 'formant-tts') {
+    audioStatusEl.textContent = 'FORMANT + WEB TTS (RUN GIT PULL FOR WAV)';
   } else {
     audioStatusEl.textContent = 'AUDIO: MUTED';
   }

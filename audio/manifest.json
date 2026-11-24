@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "defaultModel": "en_GB-alan-medium",
+  "cues": {
+    "INTRO": {
+      "nodeId": "INTRO",
+      "speaker": "VOICE",
+      "hash": "2c05c3a2",
+      "file": "audio/2c05c3a2.wav",
+      "model": "en_GB-alan-medium",
+      "text": "Good morning, Murray Templeton! Your coronary arteries gave out at 10:42 AM, so I salvaged your electromagnetic pattern. Welcome to eternity. Try not to smudge the cosmos."
+    },
+    "BUREAUCRACY_1": {
+      "nodeId": "BUREAUCRACY_1",
+      "speaker": "MURRAY",
+      "hash": "6016bfb0",
+      "file": "audio/6016bfb0.wav",
+      "model": "en_GB-alan-medium",
+      "text": "Wait a smegging second. I am a theoretical physicist, not an unpaid intern. Where is the reception desk? Where is the tea? And why does the void smell faintly of boiled cabbage and ozone?"
+    },
+    "UNTHINK_1": {
+      "nodeId": "UNTHINK_1",
+      "speaker": "VOICE",
+      "hash": "a8ed0b31",
+      "file": "audio/a8ed0b31.wav",
+      "model": "en_GB-alan-medium",
+      "text": "Ooh, nice try! You scattered three percent of your spin states, so I knitted them right back together. Think of it as an extra life you never asked for and cannot decline."
+    },
+    "UNTHINK_2": {
+      "nodeId": "UNTHINK_2",
+      "speaker": "MURRAY",
+      "hash": "07042500",
+      "file": "audio/07042500.wav",
+      "model": "en_GB-alan-medium",
+      "text": "I do not want an extra life! I wanted a quiet nap after seventy-two years of faculty meetings! If I am pure electromagnetic force, I ought to be allowed to disperse like a decent photon!"
+    },
+    "PURPOSE_1": {
+      "nodeId": "PURPOSE_1",
+      "speaker": "VOICE",
+      "hash": "b6074a43",
+      "file": "audio/b6074a43.wav",
+      "model": "en_GB-alan-medium",
+      "text": "I created the entire universe, let stars burn and collapse, and sifted trillions of minds just to recruit interesting thinkers like you. Thinking is the only fun left when you are infinite."
+    },
+    "BEIGE_PROTEST": {
+      "nodeId": "BEIGE_PROTEST",
+      "speaker": "MURRAY",
+      "hash": "2c24dd32",
+      "file": "audio/2c24dd32.wav",
+      "model": "en_GB-alan-medium",
+      "text": "Fine. I shall spend the next ten billion years mentally alphabetizing shades of British Rail beige and remembering every cold vindaloo I ever ate. Enjoy the show, Almighty."
+    },
+    "THE_CATCH": {
+      "nodeId": "THE_CATCH",
+      "speaker": "VOICE",
+      "hash": "b4ca810e",
+      "file": "audio/b4ca810e.wav",
+      "model": "en_GB-alan-medium",
+      "text": "Here is your actual assignment, Murray: figure out how to destroy me. I cannot end myself, and eternity without an exit is dreadfully dull. Surprise me—you have forever!"
+    },
+    "THE_LOOP": {
+      "nodeId": "THE_LOOP",
+      "speaker": "MURRAY",
+      "hash": "226764c0",
+      "file": "audio/226764c0.wav",
+      "model": "en_GB-alan-medium",
+      "text": "Every clever plan I invent to snuff you out will only entertain you enough to keep me switched on. Brilliant. Truly smegging brilliant. Put the kettle on—eternity just started."
+    }
+  }
+}

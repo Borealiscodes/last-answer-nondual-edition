@@ -1,0 +1,59 @@
+name: Build Piper TTS Audio
+
+on:
+  push:
+    paths:
+      - 'audio/manifest.json'
+      - 'tools/build-piper-audio.mjs'
+      - '.github/workflows/build-piper-audio.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  synthesize-cues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Verify deterministic kernel & manifest parity
+        run: node --test
+
+      - name: Setup Python & Piper TTS
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install piper-tts and download en_GB-alan-medium voice model
+        run: |
+          pip install --quiet piper-tts pathvalidate
+          mkdir -p .cache/piper
+          curl -fsSL -o .cache/piper/en_GB-alan-medium.onnx \
+            https://huggingface.co
+          curl -fsSL -o .cache/piper/en_GB-alan-medium.onnx.json \
+            https://huggingface.co.json
+
+      - name: Render FNV-1a hashed WAV cues
+        env:
+          PIPER_BIN: piper
+          PIPER_MODEL: .cache/piper/en_GB-alan-medium.onnx
+        run: node tools/build-piper-audio.mjs
+
+      - name: Commit generated WAV files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@://github.com"
+          git add audio/*.wav
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(audio): render Piper TTS cues from manifest"
+            git push
+          else
+            echo "All Piper TTS WAV cues already up to date."
+          fi

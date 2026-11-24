@@ -1,0 +1,11 @@
+{
+  "name": "last-answer-nondual-edition",
+  "version": "1.0.0",
+  "description": "Isaac Asimov's The Last Answer via Q16.16 non-dual geometry, Piper TTS, and upbeat chiptune synthesis.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "build:audio": "node tools/build-piper-audio.mjs"
+  },
+  "license": "MIT"
+}

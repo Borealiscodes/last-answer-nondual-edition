@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Last Answer: Non-Dual Chiptune Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <h1>THE LAST ANSWER <span class="badge">NON-DUAL CHIPTUNE EDITION</span></h1>
+        <p class="subtitle">Isaac Asimov (1980) // Q16.16 Bezier Holonomy // Piper TTS</p>
+      </div>
+      <div class="audio-controls">
+        <button id="btn-init" type="button" class="btn primary">Initialize Eternity</button>
+        <button id="btn-mute" type="button" class="btn" aria-pressed="false">Mute [M]</button>
+      </div>
+    </header>
+
+    <section class="viewport-frame" aria-label="Split-screen electromagnetic simulation">
+      <canvas id="split-canvas" width="480" height="272"></canvas>
+      <div class="caption-bar">
+        <span id="murray-caption" class="cap-left">ELECTROMAGNETIC SUBJECT: MURRAY TEMPLETON</span>
+        <span id="audio-status" class="cap-right">AUDIO: STANDBY</span>
+      </div>
+    </section>
+
+    <section class="dialogue-panel" aria-live="polite">
+      <div class="speaker-row">
+        <span id="speaker-tag" class="speaker-tag voice">THE VOICE</span>
+        <span id="act-tag" class="act-tag">ACT I // LOOP #1</span>
+      </div>
+      <p id="dialogue-text" class="dialogue-text">
+        Press "Initialize Eternity" or any action key (A, D, W, Space) to wake Murray Templeton's electromagnetic pattern.
+      </p>
+    </section>
+
+    <nav class="action-grid" aria-label="Dialogue gestures">
+      <button id="btn-A" data-action="A" type="button" class="btn action-btn">[A] Pedantic Objection</button>
+      <button id="btn-D" data-action="D" type="button" class="btn action-btn">[D] Attempt Un-Thinking</button>
+      <button id="btn-W" data-action="W" type="button" class="btn action-btn">[W] Existential Sigh</button>
+      <button id="btn-SPACE" data-action="SPACE" type="button" class="btn action-btn">[Space] Advance / Paradox</button>
+    </nav>
+  </main>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

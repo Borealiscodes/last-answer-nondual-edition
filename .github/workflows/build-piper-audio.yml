@@ -31,14 +31,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install piper-tts and download en_GB-alan-medium voice model
+      - name: Install piper-tts and download en_GB-alan-medium voice
         run: |
           pip install --quiet piper-tts pathvalidate
           mkdir -p .cache/piper
-          curl -fsSL -o .cache/piper/en_GB-alan-medium.onnx \
-            https://huggingface.co
-          curl -fsSL -o .cache/piper/en_GB-alan-medium.onnx.json \
-            https://huggingface.co.json
+          python -m piper.download_voices --data-dir .cache/piper en_GB-alan-medium
 
       - name: Render FNV-1a hashed WAV cues
         env:

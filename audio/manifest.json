@@ -1,69 +1,120 @@
 {
-  "version": 1,
-  "defaultModel": "en_GB-alan-medium",
+  "version": 2,
+  "models": {
+    "VOICE": "en_GB-alan-medium",
+    "MURRAY": "en_GB-northern_english_male-medium"
+  },
   "cues": {
     "INTRO": {
       "nodeId": "INTRO",
       "speaker": "VOICE",
-      "hash": "2c05c3a2",
-      "file": "audio/2c05c3a2.wav",
+      "hash": "441d6906",
+      "file": "audio/441d6906.wav",
       "model": "en_GB-alan-medium",
       "text": "Good morning, Murray Templeton! Your coronary arteries gave out at 10:42 AM, so I salvaged your electromagnetic pattern. Welcome to eternity. Try not to smudge the cosmos."
     },
     "BUREAUCRACY_1": {
       "nodeId": "BUREAUCRACY_1",
       "speaker": "MURRAY",
-      "hash": "6016bfb0",
-      "file": "audio/6016bfb0.wav",
-      "model": "en_GB-alan-medium",
+      "hash": "55e3fc81",
+      "file": "audio/55e3fc81.wav",
+      "model": "en_GB-northern_english_male-medium",
       "text": "Wait a smegging second. I am a theoretical physicist, not an unpaid intern. Where is the reception desk? Where is the tea? And why does the void smell faintly of boiled cabbage and ozone?"
+    },
+    "THEOLOGY_1": {
+      "nodeId": "THEOLOGY_1",
+      "speaker": "VOICE",
+      "hash": "d3ff8cc9",
+      "file": "audio/d3ff8cc9.wav",
+      "model": "en_GB-alan-medium",
+      "text": "Oh, heavens no! Harps are dreadful for acoustics, and eternal fire is terribly repetitive. I am simply an infinite nexus of electromagnetic force, and you are my newest research fellow."
     },
     "UNTHINK_1": {
       "nodeId": "UNTHINK_1",
       "speaker": "VOICE",
-      "hash": "a8ed0b31",
-      "file": "audio/a8ed0b31.wav",
+      "hash": "76f000f5",
+      "file": "audio/76f000f5.wav",
       "model": "en_GB-alan-medium",
       "text": "Ooh, nice try! You scattered three percent of your spin states, so I knitted them right back together. Think of it as an extra life you never asked for and cannot decline."
     },
     "UNTHINK_2": {
       "nodeId": "UNTHINK_2",
       "speaker": "MURRAY",
-      "hash": "07042500",
-      "file": "audio/07042500.wav",
-      "model": "en_GB-alan-medium",
+      "hash": "408188b7",
+      "file": "audio/408188b7.wav",
+      "model": "en_GB-northern_english_male-medium",
       "text": "I do not want an extra life! I wanted a quiet nap after seventy-two years of faculty meetings! If I am pure electromagnetic force, I ought to be allowed to disperse like a decent photon!"
     },
     "PURPOSE_1": {
       "nodeId": "PURPOSE_1",
       "speaker": "VOICE",
-      "hash": "b6074a43",
-      "file": "audio/b6074a43.wav",
+      "hash": "f9e6951f",
+      "file": "audio/f9e6951f.wav",
       "model": "en_GB-alan-medium",
       "text": "I created the entire universe, let stars burn and collapse, and sifted trillions of minds just to recruit interesting thinkers like you. Thinking is the only fun left when you are infinite."
+    },
+    "GALAXY_WASTE": {
+      "nodeId": "GALAXY_WASTE",
+      "speaker": "MURRAY",
+      "hash": "6f48282b",
+      "file": "audio/6f48282b.wav",
+      "model": "en_GB-northern_english_male-medium",
+      "text": "You detonated supernovae, invented quasars, and evolved four billion years of trilobites and accountants just to find a few blokes who enjoy maths? That is worse project management than the Vogons!"
     },
     "BEIGE_PROTEST": {
       "nodeId": "BEIGE_PROTEST",
       "speaker": "MURRAY",
-      "hash": "2c24dd32",
-      "file": "audio/2c24dd32.wav",
-      "model": "en_GB-alan-medium",
+      "hash": "4d7477dd",
+      "file": "audio/4d7477dd.wav",
+      "model": "en_GB-northern_english_male-medium",
       "text": "Fine. I shall spend the next ten billion years mentally alphabetizing shades of British Rail beige and remembering every cold vindaloo I ever ate. Enjoy the show, Almighty."
+    },
+    "BEIGE_COUNTER": {
+      "nodeId": "BEIGE_COUNTER",
+      "speaker": "VOICE",
+      "hash": "0e095c89",
+      "file": "audio/0e095c89.wav",
+      "model": "en_GB-alan-medium",
+      "text": "Magnificent! Spite-driven taxonomy is hilarious! You are already proving my point, Murray. Now, would you like to hear what your actual research grant is for?"
     },
     "THE_CATCH": {
       "nodeId": "THE_CATCH",
       "speaker": "VOICE",
-      "hash": "b4ca810e",
-      "file": "audio/b4ca810e.wav",
+      "hash": "a4d9fdca",
+      "file": "audio/a4d9fdca.wav",
       "model": "en_GB-alan-medium",
       "text": "Here is your actual assignment, Murray: figure out how to destroy me. I cannot end myself, and eternity without an exit is dreadfully dull. Surprise me—you have forever!"
+    },
+    "PARADOX_TRY": {
+      "nodeId": "PARADOX_TRY",
+      "speaker": "MURRAY",
+      "hash": "29de5f1b",
+      "file": "audio/29de5f1b.wav",
+      "model": "en_GB-northern_english_male-medium",
+      "text": "All right! Suppose we fold your electromagnetic boundary conditions into a self-canceling standing wave and induce false-vacuum collapse! That ought to switch the lights off!"
+    },
+    "SELF_PARADOX": {
+      "nodeId": "SELF_PARADOX",
+      "speaker": "VOICE",
+      "hash": "f0c95763",
+      "file": "audio/f0c95763.wav",
+      "model": "en_GB-alan-medium",
+      "text": "Ah-ah-ah! You cannot resign before solving the problem! If you could switch yourself off, you would have already figured out how to switch me off. Keep brainstorming!"
+    },
+    "VOICE_APPLAUSE": {
+      "nodeId": "VOICE_APPLAUSE",
+      "speaker": "VOICE",
+      "hash": "8fa6f124",
+      "file": "audio/8fa6f124.wav",
+      "model": "en_GB-alan-medium",
+      "text": "Ooh, delicious! I patched that boundary-condition exploit four trillion years ago, but the way you phrased it was positively sparkling. Take five picoseconds and try another!"
     },
     "THE_LOOP": {
       "nodeId": "THE_LOOP",
       "speaker": "MURRAY",
-      "hash": "226764c0",
-      "file": "audio/226764c0.wav",
-      "model": "en_GB-alan-medium",
+      "hash": "1da99a67",
+      "file": "audio/1da99a67.wav",
+      "model": "en_GB-northern_english_male-medium",
       "text": "Every clever plan I invent to snuff you out will only entertain you enough to keep me switched on. Brilliant. Truly smegging brilliant. Put the kettle on—eternity just started."
     }
   }

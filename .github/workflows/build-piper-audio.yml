@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Verify deterministic kernel & manifest parity
+      - name: Verify deterministic kernel & dual-voice manifest parity
         run: node --test
 
       - name: Setup Python & Piper TTS
@@ -31,16 +31,16 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install piper-tts and download en_GB-alan-medium voice
+      - name: Install piper-tts and download dual British voice models
         run: |
           pip install --quiet piper-tts pathvalidate
           mkdir -p .cache/piper
-          python -m piper.download_voices --data-dir .cache/piper en_GB-alan-medium
+          python -m piper.download_voices --data-dir .cache/piper en_GB-alan-medium en_GB-northern_english_male-medium
 
       - name: Render FNV-1a hashed WAV cues
         env:
           PIPER_BIN: piper
-          PIPER_MODEL: .cache/piper/en_GB-alan-medium.onnx
+          PIPER_MODEL_DIR: .cache/piper
         run: node tools/build-piper-audio.mjs
 
       - name: Commit generated WAV files
@@ -49,7 +49,7 @@ jobs:
           git config user.email "github-actions[bot]@://github.com"
           git add audio/*.wav
           if ! git diff --cached --quiet; then
-            git commit -m "chore(audio): render Piper TTS cues from manifest"
+            git commit -m "chore(audio): render dual-voice Piper TTS cues from manifest"
             git push
           else
             echo "All Piper TTS WAV cues already up to date."
